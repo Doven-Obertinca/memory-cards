@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
@@ -20,7 +20,7 @@
 
     <h1>
       Memory Cards
-      <button id="show" class="btn-small">
+      <button id="show" class="btn btn-small">
         <i class="fas fa-plus"></i> Add New Card
       </button>
     </h1>
@@ -29,17 +29,18 @@
       <div class="card active">
         <div class="inner-card">
           <div class="inner-card-front">
-            <p>What is PHP</p>
+            <p>What is PHP?</p>
           </div>
           <div class="inner-card-back">
             <p>A programming language</p>
           </div>
         </div>
       </div>
+
       <div class="card">
         <div class="inner-card">
           <div class="inner-card-front">
-            <p>What is PHP</p>
+            <p>What is PHP?</p>
           </div>
           <div class="inner-card-back">
             <p>A programming language</p>
@@ -47,15 +48,19 @@
         </div>
       </div>
     </div>
+
     <div class="navigation">
-      <button id="prev-button">
+      <button id="prev" class="nav-button">
         <i class="fas fa-arrow-left"></i>
       </button>
+
       <p id="current"></p>
-      <button id="prev-button">
-        <i class="fas fa-arrow-left"></i>
+
+      <button id="next" class="nav-button">
+        <i class="fas fa-arrow-right"></i>
       </button>
     </div>
+
     <div id="add-container" class="add-container">
       <h1>
         Add New Card
@@ -66,17 +71,19 @@
 
       <div class="form-group">
         <label for="question">Question</label>
-        <textarea class="question" placeholder="Enter question..."></textarea>
+        <textarea id="question" placeholder="Enter question..."></textarea>
       </div>
 
       <div class="form-group">
         <label for="answer">Answer</label>
-        <textarea class="answer" placeholder="Enter Answer..."></textarea>
+        <textarea id="answer" placeholder="Enter Answer..."></textarea>
       </div>
+
       <button id="add-card" class="btn">
-        <i class="fas fa-plus"></i>Add Card
+        <i class="fas fa-plus"></i> Add Card
       </button>
     </div>
-    <script src="index.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
