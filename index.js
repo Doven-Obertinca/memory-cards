@@ -59,10 +59,21 @@ function createCard(data, index) {
     
     `;
 
+  // Event listerner for clicking the card and flipin / in css we have class show-answer that rotate the card
+  card.addEventListener("click", () => card.classList.toggle("show-answer"));
+
   // Add to DOM cards
   cardsEl.push(card);
 
   cardsContainer.appendChild(card);
+
+  //   to update the text card
+  updateCurrentText();
+}
+
+// Show number of cards
+function updateCurrentText() {
+  currentEl.innerText = ` ${currentActiveCard + 1}/${cardsEl.length}`;
 }
 
 createCards();
